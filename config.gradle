@@ -1,0 +1,21 @@
+ext{
+
+    android = [compileSdkVersion   : 28,
+               buildToolsVersion   : '28.0.3',
+               applicationId       : 'com.lyf.firsttry',
+               minSdkVersion       : 14,
+               targetSdkVersion    : 28,
+               versionCode         : 1,
+               versionName         : '1.0',
+               versionInfo         : 'App的第2个版本，上线了一些最基础核心的功能.',
+               multiDexEnabled     : true,
+               testInstrumentationRunner : "android.support.test.runner.AndroidJUnitRunner",
+               manifestPlaceholders: [UMENG_CHANNEL_VALUE: 'imooc']]
+
+
+    signConfigs = ['storeFile'    : 'D://AndroidApk/Key/fc.jks',
+                   'storePassword': '123456',
+                   'keyAlias'     : 'fc',
+                   'keyPassword'  : '123456',
+                   'apkFilePath' : "D://AndroidApk/apkFile/fc"]
+}

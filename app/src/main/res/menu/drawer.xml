@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/topGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="首页" />
+
+        <item
+            android:id="@+id/drawer_professor"
+            android:checkable="false"
+            android:icon="@drawable/ic_home"
+            android:title="@string/professsor" />
+
+        <item
+            android:id="@+id/drawer_tec_news"
+            android:checkable="false"
+            android:icon="@drawable/ic_home"
+            android:title="@string/teconolidge" />
+
+        <!--<item-->
+            <!--android:id="@+id/drawer_wallet_record"-->
+            <!--android:checkable="false"-->
+            <!--android:icon="@drawable/ic_home"-->
+            <!--android:title="@string/ji_page" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/drawer_cure_heart"-->
+            <!--android:checkable="false"-->
+            <!--android:icon="@drawable/ic_checkbox_marked"-->
+            <!--android:title="@string/drawer_widgets" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/drawer_music"-->
+            <!--android:checkable="false"-->
+            <!--android:icon="@drawable/ic_bug"-->
+            <!--android:title="@string/drawer_misc" />-->
+
+    </group>
+
+    <group
+        android:id="@+id/bottomGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_settings"
+            android:checkable="false"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/drawer_settings" />
+
+        <item
+            android:id="@+id/drawer_about"
+            android:checkable="false"
+            android:icon="@drawable/ic_info"
+            android:title="@string/drawer_about" />
+
+    </group>
+
+</menu>

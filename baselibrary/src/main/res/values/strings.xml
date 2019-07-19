@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+    <string name="search">搜索</string>
+    <string name="search_view_example">SearchView example…</string>
+
+    <string name="send" >提交</string>
+    <string name="wen_du">请输入温度:</string>
+    <string name="wind">请输入风力强度:</string>
+    <string name="sunlight">请输入光照强度:</string>
+    <string name="ph">请输入PH值:</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="@dimen/toolbar_elevation"
+            android:background="@android:color/holo_blue_light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStart="@dimen/content_inset"
+            app:popupTheme="?toolbar_popup_theme" />
+
+        <FrameLayout
+            android:id="@+id/main_tab_fl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:background="@color/color_e5e5e5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home_rb"
+                style="@style/home_bottom_tab_style"
+                android:checked="true"
+                android:drawableTop="@drawable/ic_tab_home"
+                android:text="@string/home_page" />
+
+            <RadioButton
+                android:id="@+id/bo_rb"
+                style="@style/home_bottom_tab_style"
+                android:drawableTop="@drawable/ic_tab_msg"
+                android:text="@string/bo_page" />
+
+            <RadioButton
+                android:id="@+id/ji_rb"
+                style="@style/home_bottom_tab_style"
+                android:drawableTop="@drawable/ic_tab_fresh"
+                android:text="@string/ji_page" />
+
+            <RadioButton
+                android:id="@+id/shu_rb"
+                style="@style/home_bottom_tab_style"
+                android:drawableTop="@drawable/ic_tab_discovery"
+                android:text="@string/shu_page" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer" />
+
+</android.support.v4.widget.DrawerLayout>
