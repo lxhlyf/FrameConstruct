@@ -7,10 +7,15 @@
     android:gravity="center"
     tools:ignore="MissingDefaultResource">
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/second_rv"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/second_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

@@ -1,15 +1,13 @@
 package com.lib_person;
 
 
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.baselibrary.BaseActivity;
+import com.baselibrary.base.BaseActivity;
 import com.baselibrary.Constant;
 import com.baselibrary.utils.SpCache;
 

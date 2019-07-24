@@ -7,7 +7,7 @@
     <dimen name="title_bar_height">44.0dip</dimen>
 
     <dimen name="toolbar_elevation">8dp</dimen>
-    <dimen name="content_inset">16dp</dimen>
+    <dimen name="content_inset">6dp</dimen>
 
     <dimen name="drawer_header_height" tools:ignore="MissingDefaultResource">196dp</dimen>
 </resources>

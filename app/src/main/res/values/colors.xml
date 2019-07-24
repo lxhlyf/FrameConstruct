@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-
+    <color name="colorPrimary">#CACCDB</color>
+    <color name="colorPrimaryDark">#646575</color>
+    <color name="colorAccent">#FF4081</color>
 
     <color name="tab_text_highlight">#ff735646</color>
     <color name="tab_text_highlight_night">@color/default_text_night</color>
     <color name= "default_text_night">#ff5c6266</color>
     <color name="tab_text_normal">#ff999999</color>
     <color name="tab_text_normal_night">#ff4d5059</color>
-    <color name="color_e5e5e5">#ffe5e5e5</color>
 
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 
 </resources>

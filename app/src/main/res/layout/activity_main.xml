@@ -8,34 +8,40 @@
     android:fitsSystemWindows="true"
     tools:ignore="UnusedAttribute">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/appbar_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:elevation="@dimen/toolbar_elevation"
-            android:background="@android:color/holo_blue_light"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:contentInsetStart="@dimen/content_inset"
-            app:popupTheme="?toolbar_popup_theme" />
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
 
-        <FrameLayout
-            android:id="@+id/main_tab_fl"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+          <android.support.v7.widget.Toolbar
+              android:id="@+id/appbar_toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="?actionBarSize"
+              android:elevation="@dimen/toolbar_elevation"
+              app:titleTextColor="@color/black"
+              android:background="@android:color/transparent"
+              app:popupTheme="?toolbar_popup_theme"/>
 
+          <FrameLayout
+              android:id="@+id/main_tab_fl"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#A3D8D5D5" />
+
+      </FrameLayout>
         <RadioGroup
             android:id="@+id/main_rg"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tab_height"
-            android:background="@color/color_e5e5e5"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <RadioButton
                 android:id="@+id/home_rb"
