@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+
+    <color name="banner_bottom_bar_bg_day">#65000000</color>
+    <color name="banner_bottom_bar_bg_night">#6508090a</color>
+    <color name="banner_layout_bg_day">#ffffffff</color>
+    <color name="banner_layout_bg_night">#ff171a1e</color>
+
+    <color name="dot_select_color">#ffffffff</color>
+    <color name="dot_unselect_color">#50ffffff</color>
+
+
+</resources>

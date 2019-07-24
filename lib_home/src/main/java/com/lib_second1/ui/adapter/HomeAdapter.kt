@@ -195,7 +195,7 @@ class HomeAdapter(private val context: Context,val mXianList: List<XianCategries
                 if (convertView == null) {
                     convertView = ImageView(context)
                 }
-                (convertView as ImageView).scaleType = ImageView.ScaleType.CENTER_CROP
+                (convertView as ImageView).scaleType = ImageView.ScaleType.FIT_XY
                 val params = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 convertView.layoutParams = params
 
